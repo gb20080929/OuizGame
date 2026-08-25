@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" width="200" height="100">
+  <defs>
+    <linearGradient id="skyBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#BAE6FD"/>
+      <stop offset="50%" stop-color="#7DD3FC"/>
+      <stop offset="100%" stop-color="#93C5FD"/>
+    </linearGradient>
+    <radialGradient id="sunGrad" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FDE68A"/>
+      <stop offset="50%" stop-color="#FBBF24"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </radialGradient>
+    <radialGradient id="cloudGrad" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#E0F2FE"/>
+    </radialGradient>
+    <clipPath id="pillClipDay">
+      <rect x="2" y="2" width="196" height="96" rx="48"/>
+    </clipPath>
+  </defs>
+  <rect x="2" y="2" width="196" height="96" rx="48" fill="url(#skyBg)"/>
+  <g clip-path="url(#pillClipDay)">
+    <ellipse cx="50" cy="110" rx="60" ry="40" fill="url(#cloudGrad)" opacity="0.95"/>
+    <ellipse cx="25" cy="100" rx="50" ry="35" fill="url(#cloudGrad)"/>
+    <ellipse cx="90" cy="105" rx="55" ry="38" fill="url(#cloudGrad)" opacity="0.9"/>
+    <ellipse cx="15" cy="85" rx="35" ry="28" fill="url(#cloudGrad)"/>
+    <ellipse cx="70" cy="88" rx="40" ry="30" fill="url(#cloudGrad)" opacity="0.85"/>
+    <ellipse cx="120" cy="100" rx="45" ry="32" fill="url(#cloudGrad)" opacity="0.7"/>
+    <circle cx="148" cy="50" r="36" fill="url(#sunGrad)"/>
+  </g>
+  <rect x="2" y="2" width="196" height="96" rx="48" fill="none" stroke="#38BDF8" stroke-width="4"/>
+</svg>

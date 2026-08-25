@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" width="200" height="100">
+  <defs>
+    <linearGradient id="nightBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3730A3"/>
+      <stop offset="50%" stop-color="#4C1D95"/>
+      <stop offset="100%" stop-color="#5B21B6"/>
+    </linearGradient>
+    <radialGradient id="moonGrad" cx="40%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#F1F5F9"/>
+      <stop offset="70%" stop-color="#CBD5E1"/>
+      <stop offset="100%" stop-color="#94A3B8"/>
+    </radialGradient>
+    <radialGradient id="nightCloud" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#4338CA" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#312E81" stop-opacity="0.7"/>
+    </radialGradient>
+    <clipPath id="pillClipNight">
+      <rect x="2" y="2" width="196" height="96" rx="48"/>
+    </clipPath>
+  </defs>
+  <rect x="2" y="2" width="196" height="96" rx="48" fill="url(#nightBg)"/>
+  <g clip-path="url(#pillClipNight)">
+    <ellipse cx="155" cy="90" rx="50" ry="32" fill="url(#nightCloud)"/>
+    <ellipse cx="130" cy="82" rx="35" ry="26" fill="url(#nightCloud)"/>
+    <ellipse cx="175" cy="78" rx="35" ry="26" fill="url(#nightCloud)"/>
+    <ellipse cx="145" cy="70" rx="28" ry="20" fill="#3730A3" opacity="0.6"/>
+    <circle cx="115" cy="22" r="2" fill="#FFFFFF" opacity="0.9"/>
+    <circle cx="140" cy="35" r="1.5" fill="#FFFFFF" opacity="0.7"/>
+    <circle cx="155" cy="18" r="1.5" fill="#FDE047" opacity="0.9"/>
+    <circle cx="170" cy="30" r="2" fill="#FFFFFF" opacity="0.6"/>
+    <circle cx="180" cy="18" r="1.5" fill="#FDE047" opacity="0.8"/>
+    <circle cx="125" cy="50" r="1.5" fill="#FFFFFF" opacity="0.5"/>
+    <circle cx="52" cy="50" r="36" fill="url(#moonGrad)"/>
+  </g>
+  <rect x="2" y="2" width="196" height="96" rx="48" fill="none" stroke="#818CF8" stroke-width="4"/>
+</svg>
